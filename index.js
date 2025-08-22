@@ -86,3 +86,21 @@ const handlePalindrome = (word) => {
 };
 
 // handlePalindrome("hello");
+
+// Problem 4: Find the Maximum Number
+// Write a function that takes an array of numbers and returns the largest number.
+
+// Example:
+
+// Input: [5, 1, 9, 3]
+// Output: 9
+
+const findMaxNumber = (num) => {
+  const givenNum = num;
+  console.log(num);
+  const maxNumber = Math.max(...givenNum);
+  console.log(maxNumber);
+  return maxNumber;
+};
+
+// findMaxNumber([3, 9, 5, 7, 3, 2]);
