@@ -57,3 +57,32 @@ const findVowels = (word) => {
 };
 
 // findVowels("muhammad");
+
+// Problem 3: Check for Palindrome
+// Write a function that checks if a string is a palindrome (reads the same forward and backward).
+
+// Example:
+
+// Input: "madam"
+// Output: true
+// Input: "hello"
+// Output: false
+
+const handlePalindrome = (word) => {
+  const givenWord = word;
+  const makeArray = givenWord.split("");
+  const firstLetter = makeArray[0];
+  console.log(firstLetter);
+  const lastLetter = makeArray[makeArray.length - 1];
+  console.log(lastLetter);
+
+  if (firstLetter === lastLetter) {
+    console.log(true);
+    return true;
+  } else {
+    console.log(false);
+    return false;
+  }
+};
+
+// handlePalindrome("hello");
