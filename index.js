@@ -180,3 +180,26 @@ const findEvenNumbers = (num) => {
 };
 
 // findEvenNumbers([1, 2, 3, 5, 6, 7, 8]);
+
+// Problem 8: Capitalize First Letter of Each Word
+// Write a function that capitalizes the first letter of each word in a string.
+
+// Example:
+
+// Input: "hello world"
+// Output: "Hello World"
+
+const handleCapitalize = (words) => {
+  const givenWords = words;
+  const singleWords = givenWords.split(" ");
+
+  const capitalized = singleWords.map((w) => {
+    return w.charAt(0).toUpperCase() + w.slice(1);
+  });
+  const wordInSentace = capitalized.join(" ");
+  console.log(wordInSentace);
+};
+
+// handleCapitalize(
+//   "hi i am reja, a mern stack develper, like to solve problems, because it boasts my skills and let me learn new things and functionality."
+// );
