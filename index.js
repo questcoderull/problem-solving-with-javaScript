@@ -26,4 +26,34 @@ const handleRerseWord = (word) => {
   return makeString;
 };
 
-handleRerseWord("Hello");
+// handleRerseWord("hello world");
+
+// Problem 2: Count Vowels in a String
+// Write a function that counts how many vowels (a, e, i, o, u) are in a given string.
+
+// Example:
+
+// Input: "programming"
+// Output: 3
+
+const findVowels = (word) => {
+  const givenWord = word;
+  const makeArry = givenWord.split("");
+  console.log(makeArry);
+
+  let vowelCount = 0;
+  const vowels = ["a", "e", "i", "o", "u"];
+
+  for (let i = 0; i < makeArry.length; i++) {
+    const element = makeArry[i];
+    console.log("element", element);
+
+    if (vowels.includes(element)) {
+      vowelCount++;
+    }
+  }
+
+  console.log("total vowels", vowelCount);
+};
+
+// findVowels("muhammad");
