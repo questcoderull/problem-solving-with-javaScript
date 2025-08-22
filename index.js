@@ -154,3 +154,29 @@ const handleSum = (numbers) => {
 };
 
 // handleSum([5, 5, 5, 300, 9, 7, 3, 2, 76]);
+
+// Problem 7: Find Even Numbers in an Array
+// Write a function that returns all even numbers from a given array.
+
+// Example:
+
+// Input: [1, 2, 3, 4, 5, 6]
+// Output: [2, 4, 6]
+
+const findEvenNumbers = (num) => {
+  const givenNumbers = num;
+  console.log(givenNumbers);
+  const totalEvenNumbers = [];
+
+  for (let i = 0; i < givenNumbers.length; i++) {
+    const singleNumbers = givenNumbers[i];
+    console.log(singleNumbers);
+
+    if (singleNumbers % 2 == 0) {
+      totalEvenNumbers.push(singleNumbers);
+    }
+  }
+  console.log("total even numbers", totalEvenNumbers);
+};
+
+// findEvenNumbers([1, 2, 3, 5, 6, 7, 8]);
