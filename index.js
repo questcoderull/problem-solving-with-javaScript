@@ -203,3 +203,25 @@ const handleCapitalize = (words) => {
 // handleCapitalize(
 //   "hi i am reja, a mern stack develper, like to solve problems, because it boasts my skills and let me learn new things and functionality."
 // );
+
+// Problem 9: Find the Factorial of a Number
+// Write a function that calculates the factorial of a number using a loop.
+
+// Example:
+
+// Input: 5
+// Output: 120
+
+const findFactorial = (num) => {
+  let result = 1;
+
+  for (let i = 1; i <= num; i++) {
+    result = result * i;
+
+    console.log("result in the loop", result);
+  }
+  console.log(result);
+  return result;
+};
+
+// findFactorial(5);
