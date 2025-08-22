@@ -26,7 +26,7 @@ const handleRerseWord = (word) => {
   return makeString;
 };
 
-// handleRerseWord("hello world");
+// handleRerseWord("Hello worl");
 
 // Problem 2: Count Vowels in a String
 // Write a function that counts how many vowels (a, e, i, o, u) are in a given string.
@@ -85,7 +85,7 @@ const handlePalindrome = (word) => {
   }
 };
 
-// handlePalindrome("hello");
+// handlePalindrome("madam");
 
 // Problem 4: Find the Maximum Number
 // Write a function that takes an array of numbers and returns the largest number.
@@ -132,3 +132,25 @@ const removeDuplicatesNum = (num) => {
 };
 
 // removeDuplicatesNum([3, 3, 3, 3, 3, 5, 6, 6, 1, 6, 7, 7]);
+
+// Problem 6: Sum of All Numbers in an Array
+// Write a function that returns the sum of all numbers in an array.
+
+// Example:
+
+// Input: [1, 2, 3, 4]
+// Output: 10
+
+const handleSum = (numbers) => {
+  const givenNumbers = numbers;
+  // console.log(givenNumbers);
+  let totalSum = 0;
+  for (let i = 0; i < givenNumbers.length; i++) {
+    const element = givenNumbers[i];
+    totalSum = totalSum + element;
+  }
+  console.log("summed number", totalSum);
+  return totalSum;
+};
+
+// handleSum([5, 5, 5, 300, 9, 7, 3, 2, 76]);
